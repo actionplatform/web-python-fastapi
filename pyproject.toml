@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "web-python-fastapi"
-version = "0.0.0"
+version = "0.1.0"
 package-mode = false
 description = ""
 authors = ["Fernando Celmer"]
