@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "web-python-fastapi"
+version = "0.0.0"
+package-mode = false
+description = ""
+authors = ["Fernando Celmer"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.141.0"
+uvicorn = { extras = ["standard"], version = "^0.34.0" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+httpx = "^0.28.0"
+
+[tool.poetry.group.code-quality.dependencies]
+ruff = "^0.9.0"
+mypy = "^1.13.0"
+
+[tool.ruff]
+extend = ".code_quality/ruff.toml"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
