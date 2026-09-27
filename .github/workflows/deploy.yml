@@ -50,7 +50,7 @@ jobs:
         with:
           install: "false"
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         if: steps.gate.outputs.ready == 'true'
         with:
           python-version: "3.12"
